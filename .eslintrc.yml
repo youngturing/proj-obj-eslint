@@ -2,12 +2,13 @@ env:
   browser: true
   es2021: true
 extends:
-  - parser:@typescript-eslint/parser
   - plugin:react/recommended
   - standard-with-typescript
   - project:./tsconfig.json
 overrides: []
 parserOptions:
+  parser: '@typescript-eslint/parser'
+  project: './tsconfig.json'
   ecmaVersion: latest
   sourceType: module
 plugins:
