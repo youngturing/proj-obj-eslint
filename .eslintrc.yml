@@ -4,7 +4,6 @@ env:
 extends:
   - plugin:react/recommended
   - standard-with-typescript
-  - project:./tsconfig.json
 overrides: []
 parserOptions:
   parser: '@typescript-eslint/parser'
