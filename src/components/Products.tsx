@@ -7,6 +7,8 @@ interface Product {
     price: number,
 }
 
+console.log();
+
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
