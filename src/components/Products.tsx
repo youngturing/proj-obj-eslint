@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 interface Product {
-    id: number,
-    name: string,
-    price: number,
+  id: number
+  name: string
+  price: number
 }
 
-console.log('eslint7');
-
 const Products: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Product[]>([])
 
   useEffect(() => {
-    fetchProducts();
-  }, []);
+    await fetchProducts()
+  }, [])
 
   const fetchProducts = async () => {
     try {
-        const response = await axios.get('http://localhost:3001/api/products');
-        setProducts(response.data);
-    } catch(error) {
-        console.log(error);
+      const response = await axios.get('http://localhost:3001/api/products')
+      setProducts(response.data)
+    } catch (error) {
+      console.log(error)
     }
-  };
+  }
 
   return (
     <div>
@@ -36,9 +34,7 @@ const Products: React.FC = () => {
             ))}
         </ul>
     </div>
-  );
-};
+  )
+}
 
-
-export default Products;
- 
+export default Products

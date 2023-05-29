@@ -1,6 +1,6 @@
-import React from 'react';
-import Products from './components/Products';
-import Payments from './components/Payements';
+import React from 'react'
+import Products from './components/Products'
+import Payments from './components/Payements'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Products/>
       <Payments/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
