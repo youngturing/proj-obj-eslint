@@ -8,7 +8,7 @@ extends:
 overrides: []
 parserOptions:
   parser: '@typescript-eslint/parser'
-  project: './tsconfig.json'
+  project: 'tsconfig.json'
   ecmaVersion: latest
   sourceType: module
 plugins:
