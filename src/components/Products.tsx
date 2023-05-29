@@ -7,7 +7,7 @@ interface Product {
     price: number,
 }
 
-console.log('eslint6');
+console.log('eslint7');
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
